@@ -26,7 +26,11 @@
                     colors: {
                         clifford: '#da373d',
                         'text-title': '#414040',
+                    },
+                    backgroundImage: {
+                        'banner-img': "url('./images/banner.png')",
                     }
+
                 }
             }
         }
@@ -43,9 +47,9 @@
 </head>
 
 <body class="font-poppins">
-    <header class="container mx-auto">
+    <header class="max-w-5xl  mx-auto">
         <!-- nav start -->
-        <nav>
+        <nav class="py-12">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -81,6 +85,25 @@
                 </div>
             </div>
         </nav>
+        <!-- banner section start -->
+        <div
+            class="bg-[url('./images/banner-1.png'),_url('./images/banner.png')] lg:bg-[length:100%_100%] bg-cover bg-center py-24 mx-3 rounded-xl">
+            <h2 class="text-white text-4xl lg:text-5xl font-extrabold text-center mb-6 font-eb-garamond">We Provide
+                Effective <br>
+                Legal
+                Solutions</h2>
+            <p class="text-white text-center lg:w-[650px] mx-auto">There are many variations of passages of Lorem Ipsum
+                available, but the majority have
+                suffered alteration
+                in some form, by injected humour.
+            </p>
+            <div class="flex mt-8 justify-center mx-3">
+                <label class="form-control w-full max-w-lg me-3">
+                    <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-lg" />
+                </label>
+                <button class="btn bg-[#B68C5A] text-white border-0">Search</button>
+            </div>
+        </div>
     </header>
     <main></main>
     <footer></footer>
